@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyBuddy - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <nav>
+        <ul>
+            <img src="logo.png" alt="" id="logo">
+            <li>Overview</li>
+            <li>Studying</li>
+            <li>Hobbies</li>
+            <li>Self Learning</li>
+            <li>Settings</li>
+        </ul>
+    </nav>
+    <main>
+        <h1>StudyBuddy Dashboard</h1>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>Your personalized dashboard for managing studies, hobbies, and self-learning.</p>
+            <div class="grid-div-container">
+                <div class="progress-bar-container grid-div1">
+                    <h3>English</h3>
+                    <div class="progress-bar" id="progress-1">
+                        <progress value="75" min="0" max="100"
+                            style="visibility:hidden;height:0;width:0;">75%</progress>
+                        <p class="progress-bar-text">75%</p>
+                    </div>
+                </div>
+                <div class="progress-bar-container grid-div2">
+                    <h3>Arabic</h3>
+                    <div class="progress-bar" id="progress-2">
+                        <progress value="25" min="0" max="100"
+                            style="visibility:hidden;height:0;width:0;">25%</progress>
+                        <p class="progress-bar-text">25%</p>
+                    </div>
+                </div>
+                <div class="progress-bar-container grid-div3">
+                    <h3>French</h3>
+                    <div class="progress-bar" id="progress-2">
+                        <progress value="25" min="0" max="100"
+                            style="visibility:hidden;height:0;width:0;">25%</progress>
+                        <p class="progress-bar-text">25%</p>
+                    </div>
+                </div>
+                <div class="progress-bar-container grid-div4">
+                    <h3>DECI Content Progress</h3>
+                    <div class="progress-bar" id="progress-2">
+                        <progress value="25" min="0" max="100"
+                            style="visibility:hidden;height:0;width:0;">25%</progress>
+                        <p class="progress-bar-text">25%</p>
+                    </div>
+                </div>
+                <div class="grid-div5"> </div>
+            </div>
+        </section>
+        <section id="studying">
+            <h2>Studying</h2>
+            <p>Track your study sessions and progress.</p>
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <p>Explore and manage your hobbies.</p>
+        </section>
+        <section id="self-learning">
+            <h2>Self Learning</h2>
+            <p>Resources and tools for self-directed learning.</p>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <p>Customize your dashboard and preferences.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>

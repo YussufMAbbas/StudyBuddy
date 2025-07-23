@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'ComputerSaysNo';
+    src: url('Computer\ says\ no.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'ComputerSaysNo', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+nav ul li {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1.5rem;
+}
+
+nav ul li:first-child {
+    border-top-right-radius: 25px;
+}
+
+nav ul li:hover {
+    background: #f0f0f0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: max(15vw, 200px);
+    background: #f8f8f8;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    border-radius: 25px;
+}
+
+p {
+    margin: 15px auto;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+h2 {
+    margin: 15px auto;
+    padding: 0;
+    font-size: 2rem;
+}
+
+h3 {
+    margin: 15px auto;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.progress-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background:
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(hotpink 75%, pink 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#progress-1 {
+    background:
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(hotpink 75%, pink 0);
+}
+
+#progress-2 {
+    background:
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(hotpink 25%, pink 0);
+}
+
+.grid-div-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 25%) 50%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+.grid-div1 { grid-area: 1 / 1 / 2 / 2; }
+.grid-div2 { grid-area: 1 / 2 / 2 / 3; }
+.grid-div3 { grid-area: 2 / 1 / 3 / 2; }
+.grid-div4 { grid-area: 2 / 2 / 3 / 3; }
+.grid-div5 { grid-area: 1 / 3 / 3 / 4; }
+
+.progress-bar-text {
+    text-align: center;
+    margin: 0;
+    font-size: 1.3rem;
+    color: black;
+}
+
+main {
+    width: 100%;
+}
