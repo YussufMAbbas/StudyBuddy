@@ -103,11 +103,26 @@ h3 {
     grid-column-gap: 25px;
     grid-row-gap: 25px;
 }
-.grid-div1 { grid-area: 1 / 1 / 2 / 2; }
-.grid-div2 { grid-area: 1 / 2 / 2 / 3; }
-.grid-div3 { grid-area: 2 / 1 / 3 / 2; }
-.grid-div4 { grid-area: 2 / 2 / 3 / 3; }
-.grid-div5 { grid-area: 1 / 3 / 3 / 4; }
+
+.grid-div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.grid-div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.grid-div3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.grid-div4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.grid-div5 {
+    grid-area: 1 / 3 / 3 / 4;
+}
 
 .progress-bar-text {
     text-align: center;
@@ -118,4 +133,11 @@ h3 {
 
 main {
     width: 100%;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    margin: 0 10px;
+    display: block;
 }
